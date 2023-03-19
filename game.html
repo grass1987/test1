@@ -1,1 +1,74 @@
+<html>
+
 <a href="index.html">返回index</a>
+<head>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+
+
+<table border="1px">
+
+
+<tr>
+    <td class="css1" ><p id="demo0"></p></td>
+    <td class="css1"><p id="demo1"></p></td>
+    <td class="css1"> <p id="demo2"></p></td>
+</tr>
+<tr>
+    <td class="css1"><p id="demo3"></p></td>
+    <td class="css1"><p id="demo4"></p></td>
+    <td class="css1"><p id="demo5"></p></td>
+</tr>
+<tr>
+    <td class="css1"><p id="demo6"></p></td>
+    <td class="css1"><p id="demo7"></p></td>
+    <td class="css1"><p id="demo8"></p></td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+    <td><button onclick="change(0)"></button></td>
+    <td><button onclick="change(1)"></button></td>
+    <td><button onclick="change(2)"></button></td>
+</tr>
+<tr>
+    <td><button onclick="change(3)"></button></td>
+    <td><button onclick="change(4)"></button></td>
+    <td><button onclick="change(5)"></button></td>
+</tr>
+<tr>
+    <td><button onclick="change(6)"></button></td>
+    <td><button onclick="change(7)"></button></td>
+    <td><button onclick="change(8)"></button></td>
+</tr>
+
+</table>
+
+
+
+<script>
+
+next_step=true;
+arr=[0,0,0,0,0,0,0,0,0];
+
+function change(number){
+    full_id="demo"+number;
+    if(next_step==true)
+    {
+        document.getElementById(full_id).innerHTML="o";
+        next_step=false;
+    }
+    else
+    {
+        document.getElementById(full_id).innerHTML="x";
+        next_step=true;
+    }
+}
+ 
+</script>
+</body>
+</html>
+
